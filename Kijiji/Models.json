@@ -1,0 +1,68 @@
+{
+    //Enum
+    "ServiceCategories": ["kIjiji Village", "Buy & Sell", "Cars & Vhichels", "Real Estate", "Jobs", "Services", "Pets", "Community", "Vacation Rentals"],
+
+    "Ads": {
+        "AdId": "GUID",
+        "Header": "String",
+        "Description": "String",
+        "Image": "List<String>",
+        "Visits": "int",
+        "AdDate": "DateTime",
+        "AdvertiserID": "GUID",
+        "ServiceCategory": "ServiceCategories"
+
+    },
+
+
+    "Sponsers": {
+        "SponserID": "GUID",
+        "SponserName": "String",
+        "Description": "String",
+        "SponserLink": "string",
+        "Links": [{
+            "Header": "string",
+            "Link": "string"
+        }]
+    },
+
+
+    "Advertiser": {
+        "Id": "GUID",
+        "AdvertiserName": "String",
+        "Street": "String",
+        "City": "String",
+        "State": "String",
+        "Zip_Code": "String",
+        "Email": "String",
+        "Avg_Reply": "Float",
+        "Reply_Rate": "Float",
+        "StartDate": "DateTime",
+        "Image": "String",
+        "Password": "String",
+        "Ads": "List<ads>",
+        "Messages": "List<MessageRooms>"
+
+
+
+    },
+
+    "MessageRooms": [{
+            "RoomID": "String",
+            "Advertiser1": "GUID",
+            "Advertiser2": "GUID",
+            "Messages": [{
+                "MessageDate": "DateTime",
+                "MessageBody": "String",
+                "IssuerId": "String"
+            }]
+        }
+
+    ]
+
+
+
+
+
+
+}
